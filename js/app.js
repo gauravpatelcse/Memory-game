@@ -3,7 +3,7 @@
  */
 
 const symbols = ["fa-diamond", "fa-diamond", "fa-paper-plane-o", "fa-paper-plane-o", "fa-anchor", "fa-anchor", "fa-bolt", "fa-bolt", "fa-cube", "fa-cube", "fa-leaf", "fa-leaf", "fa-bicycle", "fa-bicycle", "fa-bomb", "fa-bomb"];
-let cards = [...symbols, ...symbols];
+let cards = [...symbols];
 
 // Create array to hold opened cards
 
@@ -112,7 +112,7 @@ function findWinner() {
   if (matchFound === 8) {
 
     let modal = document.getElementById('win-popup');
-    var span = document.getElementsByClassName("close")[0];
+    let span = document.getElementsByClassName("close")[0];
 
     $("#total-moves").text(moves);
     $("#total-stars").text(starRating);
