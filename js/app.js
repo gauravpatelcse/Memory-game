@@ -112,7 +112,7 @@ function findWinner() {
   if (matchFound === 8) {
 
     let modal = document.getElementById('win-popup');
-    let span = document.getElementsByClassName("close")[0];
+    var span = document.getElementsByClassName("close")[0];
 
     $("#total-moves").text(moves);
     $("#total-stars").text(starRating);
